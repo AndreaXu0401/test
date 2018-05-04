@@ -1,5 +1,5 @@
-# Self-regulation: Employing a Generative Adversarial Network to Improve Event Detection
-
+Self-regulation: Employing a Generative Adversarial Network to Improve Event Detection
+=====
 
 It is slightly simplified implementation of our Self-regulation: Employing a Generative Adversarial Network to Improve Event Detection paper in Tensorflow.
 
