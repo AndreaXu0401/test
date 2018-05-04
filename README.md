@@ -4,7 +4,7 @@
 
 It is slightly simplified implementation of our Self-regulation: Employing a Generative Adversarial Network to Improve Event Detection paper in Tensorflow.
 
-#Requirements
+# Requirements
 	Python 3.6
 	Tensorflow 1.2
 	Numpy
@@ -12,7 +12,7 @@ It is slightly simplified implementation of our Self-regulation: Employing a Gen
 
 
 
-#Corpus:
+# Corpus:
 	The corpus of ACE 2005 has been used in our experiment. Though we have no right to share with anyone this corpus.
 	One may submit a request to the Linguistic Data Consortium (LDC) for approval to download and use the corpus, 
 	or find a way to obtain it in the paper "The Automatic Content Extraction (ACE) Program, Task, Data, and Evaluation".
@@ -21,7 +21,7 @@ It is slightly simplified implementation of our Self-regulation: Employing a Gen
 	we suggest to access to LDC or the homepage of TAC program.
 	
 
-#Data sets:
+# Data sets:
 	There are 5 data sets need to be used in the experiments for event detection, including lexicon, training and 
 	development datasets, as well as the ones respectively contain event types and pretrained word embeddings.
 	Listed below is the filenames of the datasets which are necessarily followed without any change.
@@ -37,7 +37,7 @@ It is slightly simplified implementation of our Self-regulation: Employing a Gen
 	By contronst, data/wordlist contains all the tokens occurred in the ACE corpus and data/labellist lists all the concerned event types.
 	
 
-#Note (about pretrained word and sentence embeddings):
+# Note (about pretrained word and sentence embeddings):
 	The length of an input sentence is limited to be longtr than 8 but shorter than 80.
 	If the real length of a sentence is out of the range, padding or pruning needs to be used for the generation of sentence embedding.
 	
@@ -46,12 +46,12 @@ It is slightly simplified implementation of our Self-regulation: Employing a Gen
 	We recommend to use the word embeddings which have been previously trained well in Feng et al's work (Feng et al. 2016. A language-independent neural network for event detection. ACL'16).
 
 
-#Preprocess:
+# Preprocess:
 	python preporcess.py
 	Run by excuting the command of preprocess.py, so as to obtain the files of train.txt and dev.txt
 	
 
-#Train:
+# Train:
 	python train.py
 	Run by excuting the command of train.py. The default parameters are used.
 	
@@ -96,7 +96,7 @@ It is slightly simplified implementation of our Self-regulation: Employing a Gen
 	  	--feature_weight_shape FEATURE_WEIGHT_SHAPE
 	                          Path model to be saved (default: [vocab_size, 300])
 
-#Eval:
+# Eval:
 	python eval.py test.txt
 
 	The model which has been trained well will be preserved under the directory of model/.
